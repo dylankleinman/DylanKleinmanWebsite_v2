@@ -6,17 +6,18 @@ import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  // const history = useHistory();
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
+  // const styles = style({
+  //   backgroundColor: `${theme.accentBright}`,
+  //   ":hover": {
+  //     boxShadow: `0 5px 15px ${theme.accentBright}`,
+  //   },
+  // });
 
   return (
     <Fade bottom duration={2000} distance="40px">
@@ -29,15 +30,25 @@ export default function Greeting(props) {
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
-                <span>I'm </span>
+                <span>&nbsp;</span>
                 <span style={{ color: theme.accentColor }}>
-                  {greeting.full_name}.{" "}
+                  {/* {greeting.full_name}.{" "} */}
+                  <Typewriter
+                    words={[
+                      "Web Developer",
+                      "Web3 Engineer",
+                      "Defi Enthusiast",
+                      "Video Game Developer",
+                      "Surfer",
+                      "Street Artist",
+                    ]}
+                    loop={false}
+                  />
                 </span>
-                {greeting.subTitle}
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
-                <button
+                {/* <button
                   {...styles}
                   className="button"
                   onClick={() => {
@@ -45,7 +56,7 @@ export default function Greeting(props) {
                   }}
                 >
                   Contact Me
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

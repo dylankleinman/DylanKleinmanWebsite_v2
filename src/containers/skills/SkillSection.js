@@ -5,6 +5,8 @@ import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
+import webDesign from "../../assests/animatedJSON/webDesign.json";
+import Lottie from "react-lottie";
 // import DesignImg from "./DesignImg";
 
 function GetSkillSvg(props) {
@@ -15,6 +17,15 @@ function GetSkillSvg(props) {
   // return <DesignImg theme={props.theme} />;
 }
 
+const darkOption = {
+  loop: true,
+  autoplay: true,
+  animationData: webDesign,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
 function SkillSection(props) {
   const theme = props.theme;
   return (
@@ -24,8 +35,9 @@ function SkillSection(props) {
           return (
             <div className="skills-main-div">
               <Fade left duration={2000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                <div className="skills-image-div" style={{ margin: "auto" }}>
+                  {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
+                  <Lottie options={darkOption} height={400} width={450} />
                 </div>
               </Fade>
 
