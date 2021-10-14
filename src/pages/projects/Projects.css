@@ -1,6 +1,8 @@
 .projects-main {
   width: 100%;
   text-align: center;
+  /* position: relative; */
+  z-index: -1;
 }
 
 .basic-projects {

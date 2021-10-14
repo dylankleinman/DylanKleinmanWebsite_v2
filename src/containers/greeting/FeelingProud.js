@@ -27,9 +27,9 @@ function FeelingProud(props) {
   return (
     <div>
       {theme.name === "light" ? (
-        <Lottie options={lightOption} height={400} width={450} />
+        <Lottie options={lightOption} />
       ) : (
-        <Lottie options={darkOption} height={400} width={450} />
+        <Lottie options={darkOption} />
       )}
     </div>
   );

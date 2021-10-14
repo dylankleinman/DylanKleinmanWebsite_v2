@@ -10,8 +10,8 @@ import { Fade } from "react-reveal";
 function Education(props) {
   const theme = props.theme;
   return (
-    <div className="education-main">
-      <Header theme={props.theme} setTheme={props.setTheme} />
+    <div className="education-main" id="education">
+      {/* <Header theme={props.theme} setTheme={props.setTheme} /> */}
       <div className="basic-education">
         <Fade bottom duration={2000} distance="40px">
           <div className="heading-div">
@@ -38,7 +38,7 @@ function Education(props) {
         <Educations theme={props.theme} />
         <Certifications theme={props.theme} />
       </div>
-      <Footer theme={props.theme} />
+      {/* <Footer theme={props.theme} /> */}
     </div>
   );
 }

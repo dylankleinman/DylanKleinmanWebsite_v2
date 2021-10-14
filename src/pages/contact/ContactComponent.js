@@ -22,8 +22,8 @@ function Contact(props) {
   });
 
   return (
-    <div className="contact-main">
-      <Header theme={theme} setTheme={props.setTheme} />
+    <div className="contact-main" id="contact">
+      {/* <Header theme={theme} setTheme={props.setTheme} /> */}
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">

@@ -7,12 +7,20 @@ import Experience from "../pages/experience/Experience";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
+import Header from "../components/header/Header";
 
-export default function Main(propss) {
+export default function Main(props) {
   if (settings.isSplash) {
     return (
       <div>
-        <HashRouter basename="/">
+        {/* <Splash {...props}></Splash> */}
+        <Header theme={props.theme} setTheme={props.setTheme} />
+        <Home {...props}></Home>
+        <Experience {...props}></Experience>
+        <Projects {...props}></Projects>
+        <Education {...props}></Education>
+        <Contact {...props}></Contact>
+        {/* <HashRouter basename="/">
           <Switch>
             <Route
               path="/"
@@ -87,13 +95,13 @@ export default function Main(propss) {
               )}
             />
           </Switch>
-        </HashRouter>
+        </HashRouter> */}
       </div>
     );
   } else {
     return (
       <div>
-        <HashRouter basename="/">
+        {/* <HashRouter basename="/">
           <Switch>
             <Route
               path="/"
@@ -158,7 +166,7 @@ export default function Main(propss) {
               )}
             />
           </Switch>
-        </HashRouter>
+        </HashRouter> */}
       </div>
     );
   }

@@ -37,7 +37,7 @@ function SkillSection(props) {
               <Fade left duration={2000}>
                 <div className="skills-image-div" style={{ margin: "auto" }}>
                   {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
-                  <Lottie options={darkOption} height={400} width={450} />
+                  <Lottie options={darkOption} />
                 </div>
               </Fade>
 
