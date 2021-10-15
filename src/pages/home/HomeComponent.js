@@ -6,7 +6,7 @@ import Footer from "../../components/footer/Footer";
 
 function Home(props) {
   return (
-    <div id="home" style={{ position: "relative", zIndex: "-1" }}>
+    <div id="home">
       {/* <Header theme={props.theme} setTheme={props.setTheme} /> */}
       <Greeting theme={props.theme} />
       <Skills theme={props.theme} />

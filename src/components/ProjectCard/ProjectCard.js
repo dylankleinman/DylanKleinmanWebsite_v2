@@ -3,6 +3,7 @@ import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function ProjectCard({ repo, theme }) {
   function openRepoinNewTab(url) {
@@ -43,6 +44,19 @@ export default function ProjectCard({ repo, theme }) {
           </p>
           <div className="repo-details">
             <ProjectLanguages logos={repo.languages} />
+            <a style={{ marginLeft: "auto" }} href={repo.github}>
+              <OverlayTrigger
+                key={repo.name}
+                placement={"top"}
+                overlay={
+                  <Tooltip id={`tooltip-top`}>
+                    <strong>View on Github</strong>
+                  </Tooltip>
+                }
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </OverlayTrigger>
+            </a>
           </div>
         </div>
       </Fade>

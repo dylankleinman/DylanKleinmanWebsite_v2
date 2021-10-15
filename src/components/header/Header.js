@@ -66,7 +66,10 @@ function Header(props) {
   return (
     <Headroom>
       <Fade top duration={1000} distance="20px">
-        <header className="header" style={{ background: theme.body }}>
+        <header
+          className="header"
+          style={{ background: theme.body, transition: "all .35s" }}
+        >
           <a to="/splash" className="logo">
             <span style={{ color: theme.text }}></span>
             <span className="logo-name" style={{ color: theme.text }}>

@@ -23,6 +23,7 @@ function ProjectLanguages(props) {
                   name={logo.skillName}
                 >
                   <span
+                    style={{ color: logo.color }}
                     className="iconify"
                     data-icon={logo.iconifyClass}
                     data-inline="false"
