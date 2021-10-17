@@ -1,7 +1,7 @@
 import React from "react";
 import "./Splash.css";
 import Lottie from "react-lottie";
-import animationData from "/Users/dylan/Desktop/code/github/PortfolioV2/src/assests/animatedJSON/splash.json";
+import animationData from "../../assests/animatedJSON/splash.json";
 
 function AnimatedSplash(props) {
   return (
