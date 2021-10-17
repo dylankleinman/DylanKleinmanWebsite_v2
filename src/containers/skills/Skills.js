@@ -13,17 +13,14 @@ export default function Skills(props) {
           <h1 className="skills-header" style={{ color: theme.text }}>
             Who Am I?
           </h1>
-          <h2
-            className="skills-header"
+          <div
+            className="skills-subheader"
             style={{
-              fontSize: "18px",
               color: theme.secondaryText,
-              maxWidth: "50%",
-              margin: "auto",
             }}
           >
             {greeting.subheader}
-          </h2>
+          </div>
         </Fade>
       </div>
       <SkillSection theme={theme} />

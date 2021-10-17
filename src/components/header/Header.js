@@ -129,10 +129,12 @@ function Header(props) {
                 Contact
               </a>
             </li>
+            <li className="themeIcon">
+              <button {...styles} onClick={changeTheme}>
+                {icon}
+              </button>
+            </li>
           </ul>
-          <button {...styles} onClick={changeTheme}>
-            {icon}
-          </button>
         </header>
       </Fade>
     </Headroom>

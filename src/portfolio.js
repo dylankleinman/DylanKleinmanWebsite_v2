@@ -12,7 +12,7 @@ const greeting = {
   mail: "dylankkleinman@gmail.com",
   subheader: `I am a 25 year old Web Developer and Project Manager from Santa Monica.   
   I love surfing, golfing, my dog, street art, video games, traveling, and meeting new people.  I focus on creating applications
-  that are eye catching while being effective and simple.`,
+  that are eye catching while being effective and user friendly.`,
 };
 
 const socialMediaLinks = {
