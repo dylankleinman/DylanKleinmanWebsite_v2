@@ -3,20 +3,9 @@ import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import { skills } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FullStackImg from "./FullStackImg";
-import CloudInfraImg from "./CloudInfraImg";
 import webDesign from "../../assests/animatedJSON/webDesign.json";
 import Lottie from "react-lottie";
 import projManagement from "../../assests/animatedJSON/projectManagement.json";
-// import DesignImg from "./DesignImg";
-
-function GetSkillSvg(props) {
-  if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
-  else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
-  // return <DesignImg theme={props.theme} />;
-}
 
 const webDesignLottie = {
   loop: true,
@@ -46,7 +35,6 @@ function SkillSection(props) {
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div" style={{ margin: "auto" }}>
-                  {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
                   <Lottie options={webDesignLottie} />
                 </div>
               </Fade>
@@ -107,7 +95,6 @@ function SkillSection(props) {
               <Fade right duration={2000}>
                 <div className="skills-image-div">
                   <Lottie options={projManagementLottie}></Lottie>
-                  {/* <GetSkillSvg fileName={skill.fileName} theme={theme} /> */}
                 </div>
               </Fade>
             </div>

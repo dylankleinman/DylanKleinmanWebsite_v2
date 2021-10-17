@@ -1,12 +1,20 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
-import ProjectsImg from "./ProjectsImg";
 import { style } from "glamor";
+import projectJSON from "../../assests/animatedJSON/projects.json";
+import Lottie from "react-lottie";
+
+const projectOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: projectJSON,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 function Projects(props) {
   const theme = props.theme;
@@ -20,12 +28,11 @@ function Projects(props) {
 
   return (
     <div className="projects-main" id="projects">
-      {/* <Header theme={theme} setTheme={props.setTheme} /> */}
       <div className="basic-projects">
         <Fade bottom duration={2000} distance="40px">
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
-              <ProjectsImg theme={theme} />
+              <Lottie options={projectOptions}></Lottie>
             </div>
             <div className="projects-heading-text-div">
               <h1
@@ -55,13 +62,12 @@ function Projects(props) {
       <a
         {...styles}
         className="general-btn"
-        href="https://github.com/harikanani"
+        href="https://github.com/dylankleinman"
       >
-        More Projects (Github)
+        View All Projects
       </a>
       <br />
       <br />
-      {/* <Footer theme={props.theme} onToggle={props.onToggle} /> */}
     </div>
   );
 }

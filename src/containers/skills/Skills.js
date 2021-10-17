@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
 import { Fade } from "react-reveal";
+import { greeting } from "../../portfolio";
 
 export default function Skills(props) {
   const theme = props.theme;
@@ -10,8 +11,19 @@ export default function Skills(props) {
       <div className="skills-header-div">
         <Fade bottom duration={2000} distance="20px">
           <h1 className="skills-header" style={{ color: theme.text }}>
-            What I Do
+            Who Am I?
           </h1>
+          <h2
+            className="skills-header"
+            style={{
+              fontSize: "18px",
+              color: theme.secondaryText,
+              maxWidth: "50%",
+              margin: "auto",
+            }}
+          >
+            {greeting.subheader}
+          </h2>
         </Fade>
       </div>
       <SkillSection theme={theme} />

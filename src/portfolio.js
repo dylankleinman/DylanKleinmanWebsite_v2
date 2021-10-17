@@ -14,6 +14,9 @@ const greeting = {
   logo_name: "CUE",
   resumeLink: "",
   mail: "dylankkleinman@gmail.com",
+  subheader: `I am a 25 year old Web Developer and Project Manager from Santa Monica.   
+  I love surfing, golfing, my dog, street art, video games, traveling, and meeting new people.  I focus on creating applications
+  that are eye catching while being effective and simple.`,
 };
 
 const socialMediaLinks = {
@@ -100,13 +103,13 @@ const skills = {
             color: "#FFCA28",
           },
         },
-        // {
-        //   skillName: "Java",
-        //   fontAwesomeClassname: "simple-icons:java",
-        //   style: {
-        //     color: "#f89820",
-        //   },
-        // },
+        {
+          skillName: "Postman",
+          fontAwesomeClassname: "logos:postman-icon",
+          style: {
+            color: "#f89820",
+          },
+        },
         {
           skillName: "jQuery",
           fontAwesomeClassname: "simple-icons:jquery",
@@ -135,13 +138,13 @@ const skills = {
             color: "#E94E32",
           },
         },
-        // {
-        //   skillName: "Python",
-        //   fontAwesomeClassname: "simple-icons:python",
-        //   style: {
-        //     color: "#3776AB",
-        //   },
-        // },
+        {
+          skillName: "Visual Studio Code",
+          fontAwesomeClassname: "logos:visual-studio-code",
+          style: {
+            color: "#3776AB",
+          },
+        },
       ],
     },
     {
@@ -163,32 +166,32 @@ const skills = {
         },
         {
           skillName: "JIRA",
-          fontAwesomeClassname: "simple-icons:jira",
+          fontAwesomeClassname: "logos:jira",
           style: {
             color: "#E94E32",
           },
         },
         {
           skillName: "Excel",
-          fontAwesomeClassname: "ant-design:file-excel-outlined",
+          fontAwesomeClassname: "vscode-icons:file-type-excel",
           style: {
             color: "#6863A6",
           },
         },
-        // {
-        //   skillName: "Firebase",
-        //   fontAwesomeClassname: "simple-icons:firebase",
-        //   style: {
-        //     color: "#FFCA28",
-        //   },
-        // },
-        // {
-        //   skillName: "PostgreSQL",
-        //   fontAwesomeClassname: "simple-icons:postgresql",
-        //   style: {
-        //     color: "#336791",
-        //   },
-        // },
+        {
+          skillName: "Powerpoint",
+          fontAwesomeClassname: "vscode-icons:file-type-powerpoint",
+          style: {
+            color: "#FFCA28",
+          },
+        },
+        {
+          skillName: "Word",
+          fontAwesomeClassname: "vscode-icons:file-type-word",
+          style: {
+            color: "#336791",
+          },
+        },
         // {
         //   skillName: "MongoDB",
         //   fontAwesomeClassname: "simple-icons:mongodb",
@@ -218,31 +221,18 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "Shantilal Shah Engineering College",
-      subtitle: "Bachelor in Information Technology",
-      logo_path: "ssec.png",
-      alt_name: "SSEC",
-      duration: "2021 - Present",
+      title: "University of California, Santa Cruz",
+      subtitle: "Bachelors of Science in Computer Science",
+      logo_path: "ucsc-inverted.png",
+      alt_name: "UCSC",
+      duration: "2014-2018",
       descriptions: [
-        "⚡ I'm currently pursuing my bachelors in Information Technology.",
-        // "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        // "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        // "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
+        "⚡ Completed Bachelors of Science in Computer Science",
+        "⚡ Received Deans Honors awards for achieving excellent GPA",
+        "⚡ Focused on team based projects extending more than a single quarter",
+        "⚡ Tutor and TA for introductory coding classes",
       ],
-      website_link: "http://www.ssgec.ac.in/",
-    },
-    {
-      title: "Dr. S. & S. S. Ghandhy College Of Engineering & Technology",
-      subtitle: "Diploma in Information Technology",
-      logo_path: "ssgandhy.png",
-      alt_name: "SSGC",
-      duration: "2018 - 2021",
-      descriptions: [
-        "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for Backend , Web , Mobile App Development, etc.",
-        "⚡ I have implemented several projects based on what I've leart under my Computer Engineering course. ",
-      ],
-      website_link: "http://www.ssgc.cteguj.in/",
+      website_link: "https://www.ucsc.edu/",
     },
   ],
 };
@@ -250,70 +240,46 @@ const degrees = {
 const certifications = {
   certifications: [
     {
-      title: "M0001: MongoDB Basics",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12se6bMep48WXA1PlizTBAgCnW0GXM6wq/view?usp=sharing",
-      alt_name: "MongoDB University",
-      // color_code: "#2AAFED",
+      title: "Operating Systems",
+      subtitle: "Python",
+      logo_path: "ucsc.png",
+      alt_name: "UCSC",
       color_code: "#47A048",
     },
     {
-      title: "Hackathon",
-      subtitle: "Hack The Mountains",
-      logo_path: "hackathon1.svg",
-      certificate_link:
-        "https://drive.google.com/file/d/1Y-HT1flWDfeyfnfqVr3ubNgGIcnuUEYt/view?usp=sharing",
-      alt_name: "hackathon",
+      title: "Mobile and Web Applications",
+      subtitle: "HTML, CSS, Java, Javascript, Swift, jQuery",
+      logo_path: "ucsc.png",
+      alt_name: "UCSC",
       color_code: "#E2405F",
     },
     {
-      title: "A300: Atlas Security",
-      subtitle: "MongoDB University",
-      logo_path: "mongo.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12u_tkvhgB-K2TIm-RDdJOwYbQ9ccqiqA/view?usp=sharing",
-      alt_name: "MongoDB University",
-      // color_code: "#F6B808",
+      title: "Software Engineering and Agile Approach",
+      subtitle: "HTML, CSS, jQuery",
+      logo_path: "ucsc.png",
+      alt_name: "UCSC",
       color_code: "#47A048",
     },
     {
-      title: "Cyber Security & Cyber Forensics",
-      subtitle: "Workshop at IIT Bombay",
-      logo_path: "iit.png",
-      certificate_link:
-        "https://drive.google.com/file/d/12uAdjQC5LfrB1ODdxqIY181ugyyQhl-I/view?usp=sharing",
-      alt_name: "Workshop",
+      title: "React - The Complete Guide",
+      subtitle: "Javascript, CSS",
+      logo_path: "udemy.png",
+      alt_name: "Udemy",
       color_code: "#2AAFED",
     },
     {
-      title: "MLH Local Hack Day: Build",
-      subtitle: "Major League Hacking",
-      logo_path: "mlh-logo.svg",
-      certificate_link:
-        "https://drive.google.com/file/d/1ws7g2Oepu76vDFir6SvR_emFAMSkB2ZQ/view?usp=sharing",
-      alt_name: "Google",
+      title: "Machine Learning",
+      subtitle: "C, Python",
+      logo_path: "ucsc.png",
+      alt_name: "UCSC",
       color_code: "#fe0037",
     },
     {
-      title: "Hack20",
-      subtitle: "Flutter International Hackathon",
-      logo_path: "flutter.png",
-      certificate_link:
-        "https://drive.google.com/file/d/1JTd8pVlHbP0RVQYtfa4OZgJYGfdiCwM6/view?usp=sharing",
-      alt_name: "Flutter International Hackathon",
+      title: "Complete C# Unity Game Developer 3D",
+      subtitle: "C#",
+      logo_path: "udemy.png",
+      alt_name: "Udemy",
       color_code: "#2AAFED",
-    },
-    {
-      title: "Postman Student Expert",
-      subtitle: "Postman",
-      logo_path: "postman.png",
-      certificate_link:
-        "https://badgr.com/public/assertions/h2qevHs4SlyoHErJQ0mn2g",
-      alt_name: "Postman",
-      // color_code: "#f36c3d",
-      color_code: "#fffbf3",
     },
     // color_code: "#8C151599",
     // color_code: "#7A7A7A",
@@ -331,9 +297,9 @@ const certifications = {
 const experience = {
   title: "Professional Experience",
   subtitle: "Jobs and Internships",
-  description:
-    "I am currently employed as a customer and technical project manager being involved in development as well as customer interaction and planning.  I have also been employed as a full time developer working on a large scale web based file storage and review system.",
-  header_image_path: "experience.svg",
+  description: `I am currently employed as a customer and technical project lead for a widely used web
+    based file storage and sharing system.  I also have professional experience as a full time web developer working with 
+    HTML, CSS, and JS.`,
   sections: [
     {
       title: "Work Experience",
@@ -351,7 +317,6 @@ const experience = {
           Made critical decisions to define priority of build tasks and development hours all while staying under budget. 
           Managed the development of each semi-annual software update including meeting and instructing the development team, QA and integration testing, organization of the build schedule and tasks, and presentation to the customer.
           `,
-          // "I worked on the Dashboard project which helps users track their activities while using Walo Application. I also worked on Ocean Inventory Application and it's Admin panel Backend as well as on Ocean Inventory Admin Front-end using React and also worked on Walo Admin Backend.",
           color: "#0071C5",
         },
         {
@@ -391,7 +356,7 @@ const experience = {
           title: "Programming Tutor",
           company: "University of California Santa Cruz",
           company_url: "https://www.ucsc.edu/",
-          logo_path: "ucsc.jpeg",
+          logo_path: "ucsc.png",
           duration: "January 2016 - January 2018",
           location: "Santa Cruz",
           description: `Provided small group and individual for an introductory java  programming class at UC Santa Cruz.  
@@ -410,7 +375,7 @@ const projectsHeader = {
   description: `My personal time is spent working on new web development and video game development projects.  
     I focus on staying up to date with modern technologies such as React.js and the Unity Game Engine.  I have also been
     spending time learning solidity and understanding web3 and blockchain technology.  My web development projects
-    are both front end and full stack using HTML, CSS, and JavaScript (React) and my video games are coded in C#.`,
+    are mainly front end with some full stack using HTML, CSS, and JavaScript (React) and my video games are coded in C#.`,
   avatar_image_path: "projects_image.svg",
 };
 
@@ -418,57 +383,19 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "harikrushn.jpg",
+    profile_image_path: "profile.jpg",
     description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
-  },
-  blogSection: {
-    title: "Blogs",
-    subtitle:
-      "I don't blog frequently but when I do something awesome, I do try to document it so it can be helpful to others. I write on Twitter.",
-    link: "https://twitter.com/Harikrushn9",
-    avatar_image_path: "blogs_image.svg",
+      "Feel free to reach out to me on any of the below platforms and I will get back to you as soon as possible.",
   },
 };
 
 const projects = {
   data: [
     {
-      id: "1",
-      name: "Dylan Kleinman Website v1",
-      github: "https://github.com/dylankleinman/DylanKleinmanWebsite",
-      url: "https://github.com/harikanani/react-twitter-clone",
-      description: `The first version of my website built with HTML, CSS, and Javascript with use of jQuery.  
-        Not currently live but available on Github`,
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "jQuery",
-          iconifyClass: "akar-icons:jquery-fill",
-          color: "#196acf",
-        },
-        {
-          name: "BlueHost",
-          iconifyClass: "carbon:ibm-cloud-dedicated-host",
-          color: "#ee3c26",
-        },
-      ],
-    },
-    {
       id: "2",
       name: "JarryChain",
       url: "https://jarrychain.dylankleinman.com/",
+      github: "https://github.com/dylankleinman/JarryChain",
       description: `JarryChain is a React.js crypto portfolio tracker with Web3 wallet integration.   
         Built with react-bootstrap, react-router-dom, and Axios for API requests.`,
       languages: [
@@ -501,38 +428,10 @@ const projects = {
       ],
     },
     {
-      id: "3",
-      name: "Weather-Checkin",
-      url: "https://github.com/harikanani/top-crypto-gainers",
-      description: `Weather checkin app built HTML/CSS, and Javascript with Google Maps, and multiple API integrations.  
-      Backend built with Node.js and MongoDB.`,
-      languages: [
-        {
-          name: "HTML5",
-          iconifyClass: "vscode-icons:file-type-html",
-        },
-        {
-          name: "CSS3",
-          iconifyClass: "vscode-icons:file-type-css",
-        },
-        {
-          name: "JavaScript",
-          iconifyClass: "logos-javascript",
-        },
-        {
-          name: "Node",
-          iconifyClass: "logos-nodejs",
-        },
-        {
-          name: "MongoDB",
-          iconifyClass: "vscode-icons:file-type-mongo",
-        },
-      ],
-    },
-    {
       id: "4",
       name: "Burger-Builder",
       url: "https://github.com/harikanani/personal-portfolio",
+      github: "https://github.com/dylankleinman/burger-builder",
       description: `Burger building and ordering app built with React, Firebase, Axios, React-Router-Dom for routing, and 
         React.lazy() for lazy loading.`,
       languages: [
@@ -557,7 +456,7 @@ const projects = {
     {
       id: "5",
       name: "Blockchain-Election",
-      url: "https://github.com/harikanani/node_express_crud_api_starter",
+      github: "https://github.com/dylankleinman/Election_Blockchain_dev",
       description: `Simple voting election platform built in React with Web3 integration.  This application uses the solidity language
       to push and pull data from a local running blockchain hosted with truffle.`,
       languages: [
@@ -587,11 +486,78 @@ const projects = {
       ],
     },
     {
+      id: "3",
+      name: "Weather-Checkin",
+      github: "https://github.com/dylankleinman/Weather-Checkin-App",
+      url: "https://weather-checkin-app.herokuapp.com/",
+      description: `Weather checkin app built HTML/CSS, and Javascript with Google Maps, and multiple API integrations.  
+      Backend built with Node.js and MongoDB.`,
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "vscode-icons:file-type-html",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "Node",
+          iconifyClass: "logos-nodejs",
+        },
+        {
+          name: "MongoDB",
+          iconifyClass: "vscode-icons:file-type-mongo",
+        },
+        {
+          name: "Heroku",
+          iconifyClass: "logos:heroku-icon",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "Dylan Kleinman Website v1",
+      github: "https://github.com/dylankleinman/DylanKleinmanWebsite",
+      url: "",
+      description: `The first version of my website built with HTML, CSS, and Javascript with use of jQuery.  
+        Not currently live but available on Github`,
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "vscode-icons:file-type-html",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "jQuery",
+          iconifyClass: "akar-icons:jquery-fill",
+          color: "#196acf",
+        },
+        {
+          name: "BlueHost",
+          iconifyClass: "carbon:ibm-cloud-dedicated-host",
+          color: "#ee3c26",
+        },
+      ],
+    },
+    {
       id: "6",
       name: "Thanos Snap",
-      url: "https://github.com/harikanani/node_express_crud_api_starter",
+      github: "https://github.com/dylankleinman/thanosSnap",
+      url: "https://dylankleinman.github.io/thanosSnap/",
       description: `Built with HTML/CSS and jQuery.  This project was to integrate Three.js animations to achieve a particle effect
-      similar to thanos when he snaps his finger`,
+      similar to thanos when he snaps his finger.`,
       languages: [
         {
           name: "HTML5",
@@ -613,211 +579,63 @@ const projects = {
         },
       ],
     },
-    // {
-    //   id: "4",
-    //   name: "node-web-scrapper",
-    //   url: "https://github.com/harikanani/node-web-scrapper",
-    //   description:
-    //     "A Simple web scrapper that scrap the information of amazon products such as price.It also scrap Wikipedia Data such as birthdate.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //     {
-    //       name: "NodeJs",
-    //       iconifyClass: "logos-nodejs",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "5",
-    //   name: "harikanani.github.io",
-    //   url: "https://github.com/harikanani/harikanani.github.io",
-    //   description:
-    //     "A Personal Portfolio Website that showcases my work and experience. which is hosted on Github Pages.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "SCSS",
-    //       iconifyClass: "vscode-icons:file-type-scss2",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "6",
-    //   name: "Automate Attendace",
-    //   url: "https://github.com/harikanani/Node_Python",
-    //   description: "Automation of Online Attendance using node js and python",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "7",
-    //   name: "Automate Discord Bot",
-    //   url: "https://github.com/harikanani/AutomateDiscordBot",
-    //   description:
-    //     "A Discord Bot to send Automatic messages to serer channel in regular time difference.",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Python Selenium",
-    //       iconifyClass: "logos-selenium",
-    //     },
-    //     {
-    //       name: "Chromium Browser",
-    //       iconifyClass: "openmoji-chromium",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "8",
-    //   name: "Flask Blog",
-    //   url: "https://github.com/harikanani/flask_blog",
-    //   description: "A Simple Blog Web Application made using Flask Framework",
-    //   languages: [
-    //     {
-    //       name: "Python",
-    //       iconifyClass: "logos-python",
-    //     },
-    //     {
-    //       name: "Flask",
-    //       iconifyClass: "cib-flask",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "vscode-icons:file-type-html",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "vscode-icons:file-type-css",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "9",
-    //   name: "Netflix top series",
-    //   url: "https://github.com/harikanani/netflix-top-series",
-    //   description: "List of Top Netflix Series which is deployed to vercel.",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "10",
-    //   name: "COVID-19 Tracker",
-    //   url: "https://github.com/harikanani/Covid19TrackerReact",
-    //   description:
-    //     "Simple Covid-19 Tracker made using React and deployed to Vercel.",
-    //   languages: [
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "11",
-    //   name: "Food Order Static Website",
-    //   url: "https://github.com/harikanani/food-order-website",
-    //   description:
-    //     "A simple static website related to food restaurants service. this is reasponsive as well.",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "PHP",
-    //       iconifyClass: "logos-php",
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: "12",
-    //   name: "NFT Launchpad",
-    //   url: "https://deliquescent-cents.000webhostapp.com/",
-    //   description: "NFT Launchpad crypto site portfolio",
-    //   languages: [
-    //     {
-    //       name: "HTML5",
-    //       iconifyClass: "logos-html-5",
-    //     },
-    //     {
-    //       name: "CSS3",
-    //       iconifyClass: "logos-css-3",
-    //     },
-    //     {
-    //       name: "JavaScript",
-    //       iconifyClass: "logos-javascript",
-    //     },
-    //     {
-    //       name: "ReactJS",
-    //       iconifyClass: "logos-react",
-    //     },
-    //   ],
-    // },
+    {
+      id: "7",
+      name: "Project MARS",
+      url: "https://dylankleinman.itch.io/mars",
+      github: "https://github.com/dylankleinman/3_Project_MARS",
+      description: `A rocket flying and landing game built the Unity Game Engine.  All gameplay coded in C# and objects created from scratch.
+      Password: Rocketman`,
+      languages: [
+        {
+          name: "Unity",
+          iconifyClass: "bx:bxl-unity",
+          color: "dimgray",
+        },
+        {
+          name: "C#",
+          iconifyClass: "logos:c-sharp",
+        },
+      ],
+    },
+    {
+      id: "8",
+      name: "Argon Assault",
+      url: "https://dylankleinman.itch.io/argon-assault",
+      github: "https://github.com/dylankleinman/4_Argon_Assault",
+      description: `A rails shooter game built with the Unity Game Engine.  All gameplay coded with C# with objects and landscapes 
+        created from scratch as well as imported from external sites.  Password: Jamaica`,
+      languages: [
+        {
+          name: "Unity",
+          iconifyClass: "bx:bxl-unity",
+          color: "dimgray",
+        },
+        {
+          name: "C#",
+          iconifyClass: "logos:c-sharp",
+        },
+      ],
+    },
+    {
+      id: "9",
+      name: "Bitcrawler",
+      url: "https://dylankleinman.itch.io/bitcrawler",
+      github: "https://github.com/dylankleinman/Bitcrawler",
+      description: `A tower defence game built with the Unity Game Engine.  Coded with C# using BFS to allow for custom pathfinding
+      for enemy AI.  Password: Crawl`,
+      languages: [
+        {
+          name: "Unity",
+          iconifyClass: "bx:bxl-unity",
+          color: "dimgray",
+        },
+        {
+          name: "C#",
+          iconifyClass: "logos:c-sharp",
+        },
+      ],
+    },
   ],
 };
 

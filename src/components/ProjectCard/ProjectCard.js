@@ -6,11 +6,6 @@ import { style } from "glamor";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export default function ProjectCard({ repo, theme }) {
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
   const styles = style({
     color: "rgb(88, 96, 105)",
     backgroundColor: "rgb(255, 255, 255)",
@@ -31,7 +26,7 @@ export default function ProjectCard({ repo, theme }) {
         <div
           {...styles}
           key={repo.id}
-          onClick={() => openRepoinNewTab(repo.url)}
+          // onClick={() => openRepoinNewTab(repo.url)}
           style={{ backgroundColor: theme.projectCard }}
         >
           <div className="repo-name-div">
@@ -44,19 +39,52 @@ export default function ProjectCard({ repo, theme }) {
           </p>
           <div className="repo-details">
             <ProjectLanguages logos={repo.languages} />
-            <a style={{ marginLeft: "auto" }} href={repo.github}>
-              <OverlayTrigger
-                key={repo.name}
-                placement={"top"}
-                overlay={
-                  <Tooltip id={`tooltip-top`}>
-                    <strong>View on Github</strong>
-                  </Tooltip>
-                }
-              >
-                <i class="fab fa-github fa-2x"></i>
-              </OverlayTrigger>
-            </a>
+            <div style={{ marginLeft: "auto", marginBottom: "auto" }}>
+              {repo.github ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={repo.github}
+                  style={{ marginRight: "1vw", color: "rgb(85, 26, 139)" }}
+                >
+                  <OverlayTrigger
+                    key={repo.name}
+                    placement={"top"}
+                    overlay={
+                      <Tooltip id={`tooltip-top`}>
+                        <strong>View Code on Github</strong>
+                      </Tooltip>
+                    }
+                  >
+                    <i class="fab fa-github fa-2x"></i>
+                  </OverlayTrigger>
+                </a>
+              ) : (
+                ""
+              )}
+              {repo.url ? (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={repo.url}
+                  style={{ color: "dimgray" }}
+                >
+                  <OverlayTrigger
+                    key={repo.name}
+                    placement={"top"}
+                    overlay={
+                      <Tooltip id={`tooltip-top`}>
+                        <strong>View Project</strong>
+                      </Tooltip>
+                    }
+                  >
+                    <i class="fas fa-external-link-alt fa-2x"></i>
+                  </OverlayTrigger>
+                </a>
+              ) : (
+                ""
+              )}
+            </div>
           </div>
         </div>
       </Fade>

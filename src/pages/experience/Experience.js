@@ -1,23 +1,34 @@
 import React from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
 import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
-import ExperienceImg from "./ExperienceImg";
+import experienceJSON from "../../assests/animatedJSON/business.json";
+import Lottie from "react-lottie";
+
+const experienceOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: experienceJSON,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 function Experience(props) {
   const theme = props.theme;
   console.log(props.setTheme);
   return (
     <div className="experience-main" id="experience">
-      {/* <Header theme={theme} setTheme={props.setTheme} /> */}
       <div className="basic-experience">
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
             <div className="experience-heading-img-div">
-              <ExperienceImg theme={theme} />
+              <Lottie
+                options={experienceOptions}
+                height={340}
+                width={320}
+              ></Lottie>
             </div>
             <div className="experience-heading-text-div">
               <h1
@@ -43,7 +54,6 @@ function Experience(props) {
         </Fade>
       </div>
       <ExperienceAccordion sections={experience["sections"]} theme={theme} />
-      {/* <Footer theme={props.theme} onToggle={props.onToggle} /> */}
     </div>
   );
 }
