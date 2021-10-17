@@ -19,24 +19,19 @@ function App() {
   }, []);
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-  const useCursor = settings.useCustomCursor;
 
   return (
     <ThemeProvider theme={themes[theme]}>
       <>
         <GlobalStyles />
         <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].cursorColor}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <Main theme={themes[theme]} setTheme={setTheme} />
-            </CursorProvider>
-          ) : (
+          <CursorProvider
+            color={themes[theme].cursorColor}
+            ringSize={25}
+            transitionTime={75}
+          >
             <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
+          </CursorProvider>
         </div>
       </>
     </ThemeProvider>

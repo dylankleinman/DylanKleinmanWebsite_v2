@@ -1,10 +1,6 @@
-/* Change this file to get your personal Porfolio */
-
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to true if you want to use the splash screen.
-  useCustomCursor: true, // Change this to false if you want the good'ol cursor
-  googleTrackingID: "UA-174238252-2",
+  googleTrackingID: "",
 };
 
 //Home Page
@@ -20,7 +16,6 @@ const greeting = {
 };
 
 const socialMediaLinks = {
-  /* Your Social Media Link */
   github: "https://github.com/dylankleinman",
   linkedin: "https://www.linkedin.com/in/dylankleinman",
   gmail: "dylankkleinman@gmail.com",
@@ -192,27 +187,6 @@ const skills = {
             color: "#336791",
           },
         },
-        // {
-        //   skillName: "MongoDB",
-        //   fontAwesomeClassname: "simple-icons:mongodb",
-        //   style: {
-        //     color: "#47A248",
-        //   },
-        // },
-        // {
-        //   skillName: "Docker",
-        //   fontAwesomeClassname: "simple-icons:docker",
-        //   style: {
-        //     color: "#1488C6",
-        //   },
-        // },
-        // {
-        //   skillName: "GitHub Actions",
-        //   fontAwesomeClassname: "simple-icons:githubactions",
-        //   style: {
-        //     color: "#5b77ef",
-        //   },
-        // },
       ],
     },
   ],
