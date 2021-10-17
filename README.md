@@ -16,3 +16,5 @@ This website is live: https://dylankleinman.com
 # illustrations
 
 - Lottie animations taken from Lottie files
+
+Inspiration for this taken from https://github.com/harikanani/PortfolioV2
