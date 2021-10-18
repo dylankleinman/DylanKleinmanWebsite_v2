@@ -366,6 +366,36 @@ const contactPageData = {
 const projects = {
   data: [
     {
+      id: "1",
+      name: "Dylan Kleinman Website v2",
+      url: "https://dylankleinman.com/",
+      github: "https://github.com/dylankleinman/DylanKleinmanWebsite_v2",
+      description: `Professional portfolio website built as a single page web app with React.js.`,
+      languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "JavaScript",
+          iconifyClass: "logos-javascript",
+        },
+        {
+          name: "NPM",
+          iconifyClass: "logos:npm-icon",
+        },
+        {
+          name: "BlueHost",
+          iconifyClass: "carbon:ibm-cloud-dedicated-host",
+          color: "#ee3c26",
+        },
+      ],
+    },
+    {
       id: "2",
       name: "JarryChain",
       url: "https://jarrychain.dylankleinman.com/",
@@ -494,10 +524,10 @@ const projects = {
       ],
     },
     {
-      id: "1",
+      id: "4",
       name: "Dylan Kleinman Website v1",
+      url: "https://dylankleinman.github.io/DylanKleinmanWebsite/",
       github: "https://github.com/dylankleinman/DylanKleinmanWebsite",
-      url: "",
       description: `The first version of my website built with HTML, CSS, and Javascript with use of jQuery.  
         Not currently live but available on Github`,
       languages: [
