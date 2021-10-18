@@ -434,7 +434,7 @@ const projects = {
     {
       id: "4",
       name: "Burger-Builder",
-      url: "https://github.com/harikanani/personal-portfolio",
+      url: "https://burgerbuilder.dylankleinman.com",
       github: "https://github.com/dylankleinman/burger-builder",
       description: `Burger building and ordering app built with React, Firebase, Axios, React-Router-Dom for routing, and 
         React.lazy() for lazy loading.`,
