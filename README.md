@@ -1,8 +1,8 @@
 Dylan Kleinman Website
 
-React single page application displaying abilities and work of Dylan Kleinman.
+React single page application displaying abilities and work of Dylan Kleinman.  Please note there are many old/deprecated packages used in this repo. 
 
-This website is live: https://dylankleinman.com
+This website is live: https://dylankleinman.vercel.app/
 
 # Technologies used
 
